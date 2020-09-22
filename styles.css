@@ -1,0 +1,103 @@
+@keyframes barTimer{
+  from{width: 0%;}
+  to{width: 95%;}
+}
+.barTimerTrigger{
+  animation-name: barTimer;
+}
+#fiveXTable{ 
+  height: 70vh;
+  width: 70vh;
+  max-height: 90vw;
+  max-width:  90vw;
+  margin: 0 auto 0 auto;
+}
+.box{
+  height: fit-content;
+  width: fit-content;
+  border: solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: white;
+}
+#timerBound{
+  margin: 1vh auto;
+  width: 90vw;
+  height: 5vh;
+  border: solid;
+  border-color: black;
+  background-color: rgba(0, 150, 255, 0.3);
+}
+#timerBar{
+  position: relative;
+  margin: -0.2vh auto;
+  width: 0%;
+  height: 95%;
+  border: solid;
+  background-color: rgba(0, 150, 255);
+  animation-duration: 7s;
+}
+#gameBar{
+  height: 8vh;
+  width: 80vw; 
+  margin: 1.5vh auto;
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 5%;
+}
+#easyButton{
+  border: solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: gray;
+  justify-content: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#startButton{
+  border: solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: white;
+  justify-content: center;
+  visibility: show;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#hardButton{
+  border:solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: white;
+  justify-content: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#scoreDiv{
+  width: 68vh;
+  height: 8vh;
+  max-height: 10vw;
+  max-width: 90vw;
+  border:solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: white;
+  text-align: center;
+  justify-self: center;
+  justify-content: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  margin: 1.5vh auto;
+}
+#scoreTxt{
+  font-size: 200%;
+  vertical-align: auto;
+}

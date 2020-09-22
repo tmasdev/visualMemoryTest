@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <script src="index.js">
+    </script>
+  <title>Visual Memory Test</title>
+  </head>
+  <body>
+    <table id="fiveXTable"class="table">
+      <div id="scoreDiv">
+        <h1 id="scoreTxt">Play a game to see your score</h1>
+      </div>
+        <tbody class="tableBody">
+          <tr class="tableRow">
+            <td id="box0" class="box" data-generated="0" data-selected="0" onclick="changebox(0)"></td>
+            <td id="box1" class="box" data-generated="0" data-selected="0" onclick="changebox(1)"></td>
+            <td id="box2" class="box" data-generated="0" data-selected="0" onclick="changebox(2)"></td>
+            <td id="box3" class="box" data-generated="0" data-selected="0" onclick="changebox(3)"></td>
+            <td id="box4" class="box" data-generated="0" data-selected="0" onclick="changebox(4)"></td>
+            <td id="box5" class="box" data-generated="0" data-selected="0" onclick="changebox(5)"></td>
+          </tr>
+          <tr class="tableRow">
+            <td id="box6" class="box" data-generated="0" data-selected="0" onclick="changebox(6)"></td>
+            <td id="box7" class="box" data-generated="0" data-selected="0" onclick="changebox(7)"></td>
+            <td id="box8" class="box" data-generated="0" data-selected="0" onclick="changebox(8)"></td>
+            <td id="box9" class="box" data-generated="0" data-selected="0" onclick="changebox(9)"></td>
+            <td id="box10" class="box" data-generated="0" data-selected="0" onclick="changebox(10)"></td>
+            <td id="box11" class="box" data-generated="0" data-selected="0" onclick="changebox(11)"></td>
+          </tr>
+          <tr class="tableRow">
+            <td id="box12" class="box" data-generated="0" data-selected="0" onclick="changebox(12)"></td>
+            <td id="box13" class="box" data-generated="0" data-selected="0" onclick="changebox(13)"></td>
+            <td id="box14" class="box" data-generated="0" data-selected="0" onclick="changebox(14)"></td>
+            <td id="box15" class="box" data-generated="0" data-selected="0" onclick="changebox(15)"></td>
+            <td id="box16" class="box" data-generated="0" data-selected="0" onclick="changebox(16)"></td>
+            <td id="box17" class="box" data-generated="0" data-selected="0" onclick="changebox(17)"></td>
+          </tr>
+          <tr class="tableRow">
+            <td id="box18" class="box" data-generated="0" data-selected="0" onclick="changebox(18)"></td>
+            <td id="box19" class="box" data-generated="0" data-selected="0" onclick="changebox(19)"></td>
+            <td id="box20" class="box" data-generated="0" data-selected="0" onclick="changebox(20)"></td>
+            <td id="box21" class="box" data-generated="0" data-selected="0" onclick="changebox(21)"></td>
+            <td id="box22" class="box" data-generated="0" data-selected="0" onclick="changebox(22)"></td>
+            <td id="box23" class="box" data-generated="0" data-selected="0" onclick="changebox(23)"></td>
+          </tr>
+          <tr class="tableRow">
+            <td id="box24" class="box" data-generated="0" data-selected="0" onclick="changebox(24)"></td>
+            <td id="box25" class="box" data-generated="0" data-selected="0" onclick="changebox(25)"></td>
+            <td id="box26" class="box" data-generated="0" data-selected="0" onclick="changebox(26)"></td>
+            <td id="box27" class="box" data-generated="0" data-selected="0" onclick="changebox(27)"></td>
+            <td id="box28" class="box" data-generated="0" data-selected="0" onclick="changebox(28)"></td>
+            <td id="box29" class="box" data-generated="0" data-selected="0" onclick="changebox(29)"></td>
+          </tr>
+          <tr class="tableRow">
+            <td id="box30" class="box" data-generated="0" data-selected="0" onclick="changebox(30)"></td>
+            <td id="box31" class="box" data-generated="0" data-selected="0" onclick="changebox(31)"></td>
+            <td id="box32" class="box" data-generated="0" data-selected="0" onclick="changebox(32)"></td>
+            <td id="box33" class="box" data-generated="0" data-selected="0" onclick="changebox(33)"></td>
+            <td id="box34" class="box" data-generated="0" data-selected="0" onclick="changebox(34)"></td>
+            <td id="box35" class="box" data-generated="0" data-selected="0" onclick="changebox(35)"></td>
+          </tr>
+        </tbody>
+      </table>
+    <div id="timerBound">
+      <div id="timerBar">
+      </div>
+    </div>
+    <div id="gameBar">
+      <div id="easyButton" onclick="setMode('easy')">
+        <h1 style="text-align: center;">Easy</h1>
+      </div>
+      <div id="startButton" onclick="startGame()">
+        <h1 style="text-align: center;">Start</h1>
+      </div>
+      <div id="hardButton" onclick="setMode('hard')">
+        <h1 style="text-align: center;">Hard</h1>
+      </div>
+    </div>
+  </body>
+</html>
