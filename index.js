@@ -3,21 +3,27 @@ let difficulty = "easy";
 let stage = "read";
 let boxes = 36;
 let maxInt = 4;
-let time = 6;
-let status;
-let score;
-let rounds;
+let time = 7;
+let status = "win";
+let score = 0;
+let rounds = 0;
 let inGame = false;
+let highestStreak = 0;
+let previousScore = 0;
 function l(text){
   console.log(text)
 }
 function updateScore(){
+  l(rounds)
   if(status=="win"){
-    document.getElementById("scoreTxt").innerHTML = score+"/"+rounds*36;
+    document.getElementById("scoreTxt").innerHTML = "Score: "+Math.round(score/36*100)+"% Streak: "+rounds;
     startGame();
   }else{
-    document.getElementById("scoreTxt").innerHTML = "Previous Score: " +score+"/"+rounds*36;
-    score = 0;
+    if(rounds>highestStreak){
+      highestStreak=rounds;
+    };
+    previousScore = score;
+    document.getElementById("scoreTxt").innerHTML = "Previous Score: "+Math.round(previousScore/36*100)+"% Highest Streak: "+highestStreak;
     rounds = 0;
   };
 }
@@ -72,11 +78,10 @@ function changebox(boxNum){
 }
 function setMode(mode){
     if(inGame==false){
-    status = "win";
     if(mode=="easy"){
       difficulty = "easy";
       maxInt = 4;
-      time = 6;
+      time = 7;
       document.getElementById("timerBar").style.animationDuration = time+"s";
       document.getElementById("hardButton").style.backgroundColor = 'white';
       document.getElementById("mediumButton").style.backgroundColor = 'white';
@@ -104,9 +109,8 @@ function setMode(mode){
 function startGame(){
   // user memorising
   inGame = true;
-  score = 0;
-  rounds = 0;
   stage = "read";
+  score = 0;
   randomiseBoard();
   document.getElementById("startButton").style.visibility = "hidden";
   document.getElementById("timerBar").classList.add('barTimerTrigger');
