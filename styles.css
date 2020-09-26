@@ -1,6 +1,6 @@
 @keyframes barTimer{
   from{width: 0%;}
-  to{width: 95%;}
+  to{width: 100%;}
 }
 .barTimerTrigger{
   animation-name: barTimer;
@@ -35,7 +35,7 @@
   height: 95%;
   border: solid;
   background-color: rgba(0, 150, 255);
-  animation-duration: 7s;
+  animation-duration: 6s;
 }
 #gameBar{
   height: 8vh;
@@ -69,6 +69,17 @@
   user-select: none; /* Standard */
 }
 #hardButton{
+  border:solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: white;
+  justify-content: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#mediumButton{
   border:solid;
   border-color: black;
   border-radius: 10%;
