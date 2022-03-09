@@ -68,17 +68,24 @@
       </div>
     </div>
     <div id="gameBar">
-      <div id="startButton" onclick="startGame()">
-        <h1 style="text-align: center;">Start</h1>
+      <div id="instructionBar">
+        <div id="instructionBox">
+          <h1 id = "instructionText" style="text-align: center;"></h1>
+        </div>
       </div>
-      <div id="easyButton" onclick="setMode('easy')">
-        <h1 style="text-align: center;">Easy</h1>
-      </div>
-      <div id="mediumButton" onclick="setMode('medium')">
-        <h1 style="text-align: center;">Medium</h1>
-      </div>
-      <div id="hardButton" onclick="setMode('hard')">
-        <h1 style="text-align: center;">Hard</h1>
+      <div id="menuBar">
+        <div id="startButton" class = "menuItem" onclick="startGame()">
+          <h1 style="text-align: center;">Start</h1>
+        </div>
+        <div id="easyButton" class = "menuItem" onclick="setMode('easy')">
+          <h1 style="text-align: center;">Easy</h1>
+        </div>
+        <div id="mediumButton" class = "menuItem" onclick="setMode('medium')">
+          <h1 style="text-align: center;">Medium</h1>
+        </div>
+        <div id="hardButton" class = "menuItem" onclick="setMode('hard')">
+          <h1 style="text-align: center;">Hard</h1>
+        </div>
       </div>
     </div>
   </body>

@@ -14,7 +14,6 @@ function l(text){
   console.log(text)
 }
 function updateScore(){
-  l(rounds)
   if(status=="win"){
     document.getElementById("scoreTxt").innerHTML = "Score: "+Math.round(score/36*100)+"% Streak: "+rounds;
     startGame();
@@ -37,7 +36,7 @@ function resetBoard(color, gen, sel){
       };
       if(sel==true){
         document.getElementById('box'+i).setAttribute("data-selected", "0");
-      }
+      };
     };
 }
 function validateBoard(){
@@ -73,11 +72,11 @@ function changebox(boxNum){
     }else{
       document.getElementById("box" + boxNum).setAttribute("data-selected", "0")
       document.getElementById("box" + boxNum).style.backgroundColor = 'white';
-    }
-  }
+    };
+  };
 }
 function setMode(mode){
-    if(inGame==false){
+  if(inGame==false){
     if(mode=="easy"){
       difficulty = "easy";
       maxInt = 4;
@@ -102,40 +101,41 @@ function setMode(mode){
       document.getElementById("hardButton").style.backgroundColor = 'gray';
       document.getElementById("mediumButton").style.backgroundColor = 'white';
       document.getElementById("easyButton").style.backgroundColor = 'white';
-    }
+    };
   }else{
-  }
+  };
 }
 function startGame(){
   // user memorising
   inGame = true;
   stage = "read";
   score = 0;
+  status ="win"
   randomiseBoard();
-  document.getElementById("startButton").style.visibility = "hidden";
+  document.getElementById("menuBar").style.display = "none";
+  document.getElementById("instructionBar").style.display = "grid";
+  document.getElementById("instructionText").innerHTML = "Memorise the pattern"
   document.getElementById("timerBar").classList.add('barTimerTrigger');
   setTimeout(()=>{ // prompting users guess
-    l(1);
+    document.getElementById("instructionText").innerHTML = "Recall the pattern"
     document.getElementById("timerBar").classList.remove('barTimerTrigger');
     resetBoard(true, false, false)
     stage = "write";
     document.getElementById("timerBar").classList.remove('barTimerTrigger');
     setTimeout(() => {
-      l(2);
       //in a timeout cus doesnt work when next to its previous removal
       //idk how to add then remove a class any other way
       document.getElementById("timerBar").classList.add('barTimerTrigger')
     }, 20)
     setTimeout(()=>{ //review game
-      l(3);
       document.getElementById("timerBar").classList.remove('barTimerTrigger');
       stage = "read";
       rounds += 1;
       validateBoard();
       setTimeout(()=>{
-        l(4);
         resetBoard(true, true, true);
-        document.getElementById("startButton").style.visibility = "visible";
+        document.getElementById("menuBar").style.display = "grid";
+        document.getElementById("instructionBar").style.display = "none";
         updateScore();
         inGame = false
       }, 1250)

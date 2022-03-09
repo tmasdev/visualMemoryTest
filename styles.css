@@ -6,10 +6,8 @@
   animation-name: barTimer;
 }
 #fiveXTable{ 
-  height: 70vh;
-  width: 70vh;
-  max-height: 90vw;
-  max-width:  90vw;
+  height: 63vh;
+  width: 63vh;
   margin: 0 auto 0 auto;
 }
 .box{
@@ -36,14 +34,37 @@
   border: solid;
   background-color: rgba(0, 150, 255);
   animation-duration: 7s;
+  animation-timing-function: linear;
 }
 #gameBar{
   height: 8vh;
   width: 80vw; 
-  margin: 1.5vh auto;
+  margin: 1vh auto;
+}
+#instructionBar {
+  display: none;
+  grid-auto-flow: column;
+  column-gap: 5vw;
+  
+}
+#instructionBox {
+  width: 70vh;
+  justify-self: center;
+  border: solid;
+  border-color: black;
+  border-radius: 10%;
+  background-color: white;
+  justify-content: center;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+#menuBar {
+  /* visibility: show; */
   display: grid;
   grid-auto-flow: column;
-  column-gap: 5%;
+  column-gap: 5vw;
 }
 #easyButton{
   border: solid;
@@ -62,7 +83,6 @@
   border-radius: 10%;
   background-color: white;
   justify-content: center;
-  visibility: show;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
@@ -106,7 +126,7 @@
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
-  margin: 1.5vh auto;
+  margin: 0.5vh auto;
 }
 #scoreTxt{
   font-size: 200%;
