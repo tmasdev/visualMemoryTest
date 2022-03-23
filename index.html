@@ -7,7 +7,7 @@
     </script>
   <title>Visual Memory Test</title>
   </head>
-  <body>
+  <body class = "unselectable">
     <table id="fiveXTable"class="table">
       <div id="scoreDiv">
         <h1 id="scoreTxt">Play a game to see your score</h1>
@@ -74,16 +74,16 @@
         </div>
       </div>
       <div id="menuBar">
-        <div id="startButton" class = "menuItem" onclick="startGame()">
+        <div id="startButton" class = "menuItem configsButton" onclick="startGame()">
           <h1 style="text-align: center;">Start</h1>
         </div>
-        <div id="easyButton" class = "menuItem" onclick="setMode('easy')">
+        <div id="easyButton" class = "menuItem configsButton" style = "background-color: gray;" onclick="setMode('easy')">
           <h1 style="text-align: center;">Easy</h1>
         </div>
-        <div id="mediumButton" class = "menuItem" onclick="setMode('medium')">
+        <div id="mediumButton" class = "menuItem configsButton" onclick="setMode('medium')">
           <h1 style="text-align: center;">Medium</h1>
         </div>
-        <div id="hardButton" class = "menuItem" onclick="setMode('hard')">
+        <div id="hardButton" class = "menuItem configsButton" onclick="setMode('hard')">
           <h1 style="text-align: center;">Hard</h1>
         </div>
       </div>

@@ -2,6 +2,14 @@
   from{width: 0%;}
   to{width: 100%;}
 }
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 .barTimerTrigger{
   animation-name: barTimer;
 }
@@ -21,8 +29,7 @@
   margin: 1vh auto;
   width: 90vw;
   height: 5vh;
-  border: solid;
-  border-color: black;
+  border: solid black;
   background-color: rgba(0, 150, 255, 0.3);
 }
 #timerBar{
@@ -30,7 +37,7 @@
   margin: -0.2vh auto;
   width: 0%;
   height: 95%;
-  border: solid;
+  border: solid black;
   background-color: rgba(0, 150, 255);
   animation-duration: 7s;
   animation-timing-function: linear;
@@ -49,8 +56,7 @@
 #instructionBox {
   width: 70vh;
   justify-self: center;
-  border: solid;
-  border-color: black;
+  border: solid black;
   border-radius: 10%;
   background-color: white;
   justify-content: center;
@@ -65,49 +71,11 @@
   grid-auto-flow: column;
   column-gap: 5vw;
 }
-#easyButton{
+.configsButton{
   border: solid;
   border-color: black;
   border-radius: 10%;
-  background-color: gray;
   justify-content: center;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-#startButton{
-  border: solid;
-  border-color: black;
-  border-radius: 10%;
-  background-color: white;
-  justify-content: center;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-#hardButton{
-  border:solid;
-  border-color: black;
-  border-radius: 10%;
-  background-color: white;
-  justify-content: center;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
-}
-#mediumButton{
-  border:solid;
-  border-color: black;
-  border-radius: 10%;
-  background-color: white;
-  justify-content: center;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
-  user-select: none; /* Standard */
 }
 #scoreDiv{
   width: 68vh;
