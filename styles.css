@@ -13,8 +13,7 @@
 .box{
   height: fit-content;
   width: fit-content;
-  border: solid;
-  border-color: black;
+  border: solid black;
   border-radius: 10%;
   background-color: white;
 }
@@ -114,7 +113,7 @@
   width: 68vh;
   height: 8vh;
   max-height: 10vw;
-  max-width: 90vw;
+  max-width: 95vw;
   border:solid;
   border-color: black;
   border-radius: 10%;
@@ -129,6 +128,7 @@
   margin: 0.5vh auto;
 }
 #scoreTxt{
-  font-size: 200%;
-  vertical-align: auto;
+  margin:  2vh;
+  font-size: 3.5vh;
+  white-space: nowrap;
 }
