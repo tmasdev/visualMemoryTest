@@ -10,9 +10,6 @@ let rounds = 0;
 let inGame = false;
 let highestStreak = 0;
 let previousScore = 0;
-function l(text){
-  console.log(text)
-}
 function updateScore(){
   if(status=="win"){
     document.getElementById("scoreTxt").innerHTML = "Score: "+Math.round(score/36*100)+"% Streak: "+rounds;
@@ -58,7 +55,6 @@ function randomiseBoard(){
       document.getElementById('box'+i).setAttribute("data-generated", "1");
     };
   };
-  console.log('randomised board')
 }
 function randint(min, max){
   return(Math.floor(Math.random() * (max-min))+min)
