@@ -1,6 +1,6 @@
 {
   "name": "visualmemorytest",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Game for practicing Visual memory",
   "main": "index.js",
   "scripts": {
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Thomasgale2005/visualMemoryTest.git"
+    "url": "git+https://github.com/TmasG/visualMemoryTest.git"
   },
   "author": "Thomas Gale",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Thomasgale2005/visualMemoryTest/issues"
+    "url": "https://github.com/TmasG/visualMemoryTest/issues"
   },
-  "homepage": "https://github.com/Thomasgale2005/visualMemoryTest#readme"
+  "homepage": "https://github.com/TmasG/visualMemoryTest#readme"
 }
