@@ -26,7 +26,7 @@ function updateScore(){
 function resetBoard(color, gen, sel){
     for (let i = 0; i < boxes; i++) {
       if(color==true){
-        document.getElementById('box'+i).style.backgroundColor = 'white';
+        document.getElementById('box'+i).style.backgroundColor = '#2c2c2e';
       };
       if(gen==true){
         document.getElementById('box'+i).setAttribute("data-generated", "0");
@@ -51,7 +51,7 @@ function randomiseBoard(){
   for (let i = 0; i < boxes; i++) {
     if(randint(0, maxInt)==0) {
       //setting random board
-      document.getElementById('box'+i).style.backgroundColor = 'gray';
+      document.getElementById('box'+i).style.backgroundColor = '#7c7c80';
       document.getElementById('box'+i).setAttribute("data-generated", "1");
     };
   };
@@ -64,10 +64,10 @@ function changebox(boxNum){
   if(stage=="write"){
     if(document.getElementById("box" + boxNum).getAttribute("data-selected")=="0"){
       document.getElementById("box" + boxNum).setAttribute("data-selected", "1")
-      document.getElementById("box" + boxNum).style.backgroundColor = 'gray';
+      document.getElementById("box" + boxNum).style.backgroundColor = '#7c7c80';
     }else{
       document.getElementById("box" + boxNum).setAttribute("data-selected", "0")
-      document.getElementById("box" + boxNum).style.backgroundColor = 'white';
+      document.getElementById("box" + boxNum).style.backgroundColor = '#2c2c2e';
     };
   };
 }
@@ -78,25 +78,25 @@ function setMode(mode){
       maxInt = 4;
       time = 7;
       document.getElementById("timerBar").style.animationDuration = time+"s";
-      document.getElementById("hardButton").style.backgroundColor = 'white';
-      document.getElementById("mediumButton").style.backgroundColor = 'white';
-      document.getElementById("easyButton").style.backgroundColor = 'gray';
+      document.getElementById("hardButton").style.backgroundColor = '#2c2c2e';
+      document.getElementById("mediumButton").style.backgroundColor = '#2c2c2e';
+      document.getElementById("easyButton").style.backgroundColor = '#7c7c80';
     } else if(mode=="medium") {
       difficulty = "medium";
       maxInt = 2;
       time = 7;
       document.getElementById("timerBar").style.animationDuration = time+"s";
-      document.getElementById("hardButton").style.backgroundColor = 'white';
-      document.getElementById("mediumButton").style.backgroundColor = 'gray';
-      document.getElementById("easyButton").style.backgroundColor = 'white';
+      document.getElementById("hardButton").style.backgroundColor = '#2c2c2e';
+      document.getElementById("mediumButton").style.backgroundColor = '#7c7c80';
+      document.getElementById("easyButton").style.backgroundColor = '#2c2c2e';
     } else if(mode=="hard") {
       difficulty = "hard";
       maxInt = 2;
       time = 8;
       document.getElementById("timerBar").style.animationDuration = time+"s";
-      document.getElementById("hardButton").style.backgroundColor = 'gray';
-      document.getElementById("mediumButton").style.backgroundColor = 'white';
-      document.getElementById("easyButton").style.backgroundColor = 'white';
+      document.getElementById("hardButton").style.backgroundColor = '#7c7c80';
+      document.getElementById("mediumButton").style.backgroundColor = '#2c2c2e';
+      document.getElementById("easyButton").style.backgroundColor = '#2c2c2e';
     };
   }else{
   };

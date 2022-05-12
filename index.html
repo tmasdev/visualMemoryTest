@@ -10,7 +10,7 @@
   <body class = "unselectable">
     <table id="fiveXTable"class="table">
       <div id="scoreDiv">
-        <h1 id="scoreTxt">Play a game to see your score</h1>
+        <h1 id="scoreTxt" class="textBox">Play a game to see your score</h1>
       </div>
         <tbody class="tableBody">
           <tr class="tableRow">
@@ -70,21 +70,21 @@
     <div id="gameBar">
       <div id="instructionBar">
         <div id="instructionBox">
-          <p id = "instructionText" style="text-align: center;"></p>
+          <p id = "instructionText" class="textBox" style="text-align: center;"></p>
         </div>
       </div>
       <div id="menuBar">
         <div id="startButton" class = "menuItem configsButton" onclick="startGame()">
-          <p style="text-align: center;">Start</p>
+          <p style="text-align: center;" class="textBox">Start</p>
         </div>
-        <div id="easyButton" class = "menuItem configsButton" style = "background-color: gray;" onclick="setMode('easy')">
-          <p style="text-align: center;">Easy</p>
+        <div id="easyButton" class = "menuItem configsButton" style = "background-color: #7c7c80;" onclick="setMode('easy')">
+          <p style="text-align: center;" class="textBox">Easy</p>
         </div>
         <div id="mediumButton" class = "menuItem configsButton" onclick="setMode('medium')">
-          <p style="text-align: center;">Medium</p>
+          <p style="text-align: center;" class="textBox">Medium</p>
         </div>
         <div id="hardButton" class = "menuItem configsButton" onclick="setMode('hard')">
-          <p style="text-align: center;">Hard</p>
+          <p style="text-align: center;" class="textBox">Hard</p>
         </div>
       </div>
     </div>
