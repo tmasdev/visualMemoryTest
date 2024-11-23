@@ -1,5 +1,5 @@
 html{
-  background-color: #2c2c2e;
+  background-color: rgb(28,28,30);
 }
 @keyframes barTimer{
   from{width: 0%;}
@@ -24,24 +24,24 @@ html{
 .box{
   height: fit-content;
   width: fit-content;
-  border: solid #ebebf0;
+  border: solid aliceblue;
   border-radius: 10%;
-  background-color: #2c2c2e;
+  background-color: rgb(28,28,30);
 }
 #timerBound{
   margin: 1vh auto;
   width: 90vw;
   height: 5vh;
-  border: solid #ebebf0;
-  background-color: #0071eb;
+  border: solid aliceblue;
+  background-color: rgb(0,122,225);
 }
 #timerBar{
   position: relative;
   margin: -0.2vh auto;
   width: 0%;
   height: 95%;
-  border: solid #ebebf0;
-  background-color: #0a84ff;
+  border: solid aliceblue;
+  background-color: rgb(0,64,221);
   animation-duration: 7s;
   animation-timing-function: linear;
 }
@@ -59,9 +59,9 @@ html{
 #instructionBox {
   width: 87.5%;
   justify-self: center;
-  border: solid #ebebf0;
+  border: solid aliceblue;
   border-radius: 10%;
-  background-color: #2c2c2e;
+  background-color: rgb(28,28,30);
   justify-content: center;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
@@ -78,7 +78,7 @@ html{
   font-size: 3.3vh;
   width: 17.5vw;
   border: solid;
-  border-color: #ebebf0;
+  border-color: aliceblue;
   border-radius: 10%;
   justify-content: center;
 }
@@ -88,9 +88,9 @@ html{
   max-height: 10vw;
   max-width: 95vw;
   border:solid; 
-  border-color: #ebebf0;
+  border-color: aliceblue;
   border-radius: 10%;
-  background-color: #2c2c2e;
+  background-color: rgb(28,28,30);
   text-align: center;
   justify-self: center;
   justify-content: center;
@@ -135,5 +135,5 @@ html{
   }
 }
 .textBox{
-  color: #ebebf0;
+  color: aliceblue;
 }
